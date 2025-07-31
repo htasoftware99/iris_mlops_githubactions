@@ -22,6 +22,11 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v2
 
+            - name: Set up gcloud CLI
+              uses: google-github-actions/setup-gcloud@v1
+              with:
+                version: 'latest'
+
             - name: Authenticate with Google cloud
               uses: google-github-actions/auth@v1
               with:
