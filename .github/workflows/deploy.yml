@@ -26,6 +26,7 @@ jobs:
               uses: google-github-actions/setup-gcloud@v1
               with:
                 version: 'latest'
+                install_kubectl: true
 
             - name: Authenticate with Google cloud
               uses: google-github-actions/auth@v1
